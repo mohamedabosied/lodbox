@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+body {
+  direction: rtl !important;
+  font-family: "Droid Arabic Naskh", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+button {
+  box-shadow: none !important;
+  outline: none;
+  border: none !important;
+}
+
+:root {
+  --dark-color: #0d0443;
+  --main-color: #1bd94a;
+  --red-color: #ff3f34;
+  --transition: 0.5s all;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--main-color);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.navbar .navbar-brand {
+  transition: var(--transition);
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: white !important;
+  transition: var(--transition) !important;
+  padding: 20px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+  font-family: "Droid Arabic Naskh", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--dark-color) !important;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-collapse {
+    border-top: solid rgba(255, 255, 255, 0.541) 1px;
+    margin: 10px 0;
+  }
+}
+
+/* ShowCae */
+.showcase {
+  background-color: #1bd94a;
+  height: 100vh;
+  background-size: cover;
+}
+.showcase .inner-showcase {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+  color: white;
+}
+.showcase .m-btn {
+  background-color: var(--red-color);
+  color: white;
+  transition: var(--transition);
+}
+.showcase .m-btn:hover {
+  background-color: var(--dark-color);
+  box-shadow: none !important;
+}
+@media (max-width: 768px) {
+  .showcase {
+    height: 50vh;
+  }
+  .showcase .inner-showcase {
+    text-align: center;
+  }
+  .showcase .inner-showcase img {
+    display: none;
+  }
+}
+
+/* About */
+.about h2 {
+  color: var(--main-color);
+}
+.about .about-btn {
+  background-color: var(--red-color);
+  color: white;
+  transition: var(--transition);
+}
+.about .about-btn:hover {
+  background-color: var(--dark-color);
+}
+
+/* Details */
+.details h2 {
+  color: var(--main-color);
+}
+.details li {
+  line-height: 50px;
+}
+.details .details-btn {
+  background-color: var(--red-color);
+  color: white;
+  transition: var(--transition);
+}
+.details .details-btn:hover {
+  background-color: var(--dark-color);
+}
+
+/* Papers Wanted */
+.papers-wanted h2 {
+  color: var(--main-color);
+}
+.papers-wanted img {
+  width: 100px;
+  line-height: 50px;
+}
+.papers-wanted li {
+  display: inline-block;
+}
+.papers-wanted .papers-wanted-btn {
+  background-color: var(--red-color);
+  color: white;
+  transition: var(--transition);
+}
+.papers-wanted .papers-wanted-btn:hover {
+  background-color: var(--dark-color);
+}
+
+/* Way to Submit */
+.way-to-submit h2 {
+  color: var(--main-color);
+}
+
+/* Contact Us */
+.contactus {
+  background-color: var(--main-color);
+}
+.contactus h2 {
+  color: white;
+}
